@@ -1,0 +1,12 @@
+#arithmetic operator
+s1,s2='python', 'java'
+print(s1+s2)
+# '+' concatication operator
+#print(s1-s2) un supported operator
+#print(s1*s2) un supported operator
+#print(s1*5)  # repetition operator
+
+#comparison operaator
+print('Python' >= '00')
+# compared by dictionary (first word compared first)
+

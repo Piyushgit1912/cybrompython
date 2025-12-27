@@ -1,0 +1,75 @@
+1. crete() / open()
+2. write() / read() 
+3.  close()
+
+
+open() 
+    <!-- the file will open if not created then itr will create first then will open -->
+ syntax 
+  open('file name with extension ', mode )
+   mode--> 
+    x- (create)
+    w- (write)
+    r- (read)
+    a- (append)
+
+f= open('n1.txt','x')
+# it will create a file in the folder and open
+#  File exists: 'n1.txt'
+
+FILE HANDLING 
+
+ mode create exists  writable  readable cursor position 
+  x-    t       F        T       F           OTH INDEX 
+  W     T       T        T       F           0TH INDEX 
+  F     T       F        T       T           0 TH 
+  A     T       T        T       F           PREVIOUS LEFT   
+
+  f= open('n1.txt','x')
+# it will create a file in the folder and open
+#  File exists: 'n1.txt'
+
+<h1>append mode </h1>
+f=open('n6.txt', 'a')
+data='this is data to n 6 ' 
+
+f.write(data)                   # single string ko e file pe likhne ke liye use karte h 
+
+f.write() for single string 
+writelines() for multiple strings 
+
+read() --> read all data
+    read(n) --> read n bitss of data 
+    readline() --> single line data 
+    readlines() --> read all lines of data 
+
+f=open('n6.txt','r+')
+data = f.read(10)
+print(data)
+
+this is da
+
+f=open('n6.txt','r+')
+data = f.read(10)
+print(data)
+data = f.read(5)
+print(data)
+f.close()
+
+this is da
+ta to
+
+f=open('n6.txt','r+')
+data = f.read()
+print(data)
+data = f.read(5)    first  me hi read() chalane se sara record padh liya jisse dobara read chalane se koi record return nhi krega 
+print(data)
+f.close()
+# this is da
+# ta to
+
+this is data to n 6 this is data to n 6
+ from python class pythonjavaphphpythonjavaphph
+python
+java
+phph
